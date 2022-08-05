@@ -5,16 +5,23 @@
     gap: 0;
 }
 
+@font-face {
+    font-family: "norse";
+    src: url(./Norse-Bold.otf);
+}
+
 .parent {
     position: relative;
     /* border: orange solid 2px; */
     flex-direction: column;
+    width: 30%;
 }
 
 .background-image {
     position: relative;
     background-image: url(./kenjy-cruz-4flpE3AKqL8-unsplash.jpg);
-    height: 99vh;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
 }
 
@@ -33,6 +40,7 @@
     font-size: 4vw;
     padding-left: 2vw;
     padding-right: 2vw;
+    font-family: "norse", sans-serif;
 }
 
 .logo{
@@ -62,7 +70,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    width: 30%;
+    width: 40%;
     /* border-right: black solid 1px; */
     margin: 0;
     background-color: lightgray;
@@ -76,11 +84,11 @@ p {
 form {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 5px 10px gray;
+    box-shadow: -5px 5px 10px gray;
     border-radius: 5px;
-    gap: 0;
     padding: 10px;
     padding-bottom: 16px;
+    background-color: white;
 }
 
 .names,
@@ -105,7 +113,7 @@ button {
     width: 120px;
     background-color: rgb(141, 87, 36);
     color: white;
-    box-shadow: 0px 5px 10px gray;
+    box-shadow: -5px 5px 10px gray;
     border-radius: 5px;
 }
 
@@ -118,4 +126,10 @@ button {
 a {
     text-decoration: none;
     color: rgb(141, 87, 36);
+}
+
+input:focus{
+    outline: none;
+    border: blue solid 2px;
+    box-shadow: 2px 2px 2px blue;
 }
