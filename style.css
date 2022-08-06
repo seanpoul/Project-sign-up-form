@@ -43,7 +43,7 @@
     font-family: "norse", sans-serif;
 }
 
-.logo{
+.logo {
     width: 10vw;
     height: calc(10vw);
 }
@@ -95,17 +95,27 @@ form {
 .contact,
 .secure {
     display: flex;
-    width: 10%;
-    gap: 16px;
+    gap: 4%;
+    padding-bottom: 1%;
 }
 
-.sign{
+.first,
+.last,
+.email,
+.phone,
+.pass,
+.confirm {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign {
     margin-bottom: 8px;
     font-size: 20px;
 }
 
-input{
-    width: 13vw;
+input {
+    width: 16vw;
 }
 
 button {
@@ -128,8 +138,22 @@ a {
     color: rgb(141, 87, 36);
 }
 
-input:focus{
+input:focus {
     outline: none;
     border: blue solid 2px;
     box-shadow: 2px 2px 2px blue;
+}
+
+#pwd:focus:invalid,
+#pwdConfirm:focus:invalid {
+    outline: none;
+    border: red solid 2px;
+    box-shadow: 2px 2px 2px red;
+}
+
+#pwd:valid,
+#pwdConfirm:valid {
+    outline: none;
+    border: green solid 2px;
+    box-shadow: 2px 2px 2px green;
 }

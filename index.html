@@ -24,7 +24,7 @@
                 for free stuff!</p>
             <p>You are now compelled to sign up!</p>
         </div>
-        <form action="">
+        <form id="form-content" action="">
             <div class="sign">Sign up now!</div>
             <div class="names">
                 <div class="first">
@@ -49,15 +49,15 @@
             <div class="secure">
                 <div class="pass">
                     <label for="pwd">Password</label>
-                    <input type="pwd" id="pwd">
+                    <input type="password" id="pwd" minlength="8" maxlength="16" required>
                 </div>
                 <div class="confirm">
                     <label for="pwdConfirm">Confirm password</label>
-                    <input type="pwd" id="pwdConfirm">
+                    <input type="password" id="pwdConfirm" minlength="8" maxlength="16" required>
                 </div>
             </div>
         </form>
-        <button type="submit">Create account</button>
+        <button type="submit" form="form-content">Create account</button>
         <div class="footer">Already have an account? <a href="">Log in</a> </div>
     </div>
 </body>
