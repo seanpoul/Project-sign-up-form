@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 
@@ -25,7 +26,7 @@
             <p>You are now compelled to sign up!</p>
         </div>
         <form id="form-content" action="">
-            <div class="sign">Sign up now!</div>
+            <div class="sign">Free stuff awaits!</div>
             <div class="names">
                 <div class="first">
                     <label for="firstName">First name</label>
@@ -54,6 +55,7 @@
                 <div class="confirm">
                     <label for="pwdConfirm">Confirm password</label>
                     <input type="password" id="pwdConfirm" minlength="8" maxlength="16" required>
+                    <div id="message"></div>
                 </div>
             </div>
         </form>
